@@ -1,0 +1,62 @@
+
+    <html>
+    <head>
+        <title>Blood Group Classification Model Summary</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #2c3e50; }
+            h2 { color: #3498db; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+            th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #f2f2f2; }
+            tr:hover { background-color: #f5f5f5; }
+            .highlight { background-color: #e8f4f8; font-weight: bold; }
+            img { max-width: 100%; height: auto; margin: 10px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>Blood Group Classification Model Summary</h1>
+
+        <h2>Dataset Information</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Total Classes</td><td>8</td></tr>
+            <tr><td>Class Names</td><td>A+, A-, AB+, AB-, B+, B-, O+, O-</td></tr>
+            <tr><td>Training Images</td><td>5104</td></tr>
+            <tr><td>Validation Images</td><td>896</td></tr>
+            <tr><td>Test Images</td><td>896</td></tr>
+        </table>
+
+        <h2>Best Model Performance</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr class="highlight"><td>Best Model</td><td>Ensemble</td></tr>
+            <tr class="highlight"><td>Accuracy</td><td>0.9219</td></tr>
+            <tr><td>Parameters</td><td>51,036,408</td></tr>
+        </table>
+
+        <h2>Model Comparison</h2>
+        <table>
+            <tr><th>Model</th><th>Accuracy</th></tr>
+            <tr class="highlight"><td>Ensemble</td><td>0.9219</td></tr>
+<tr ><td>VGG16 (Fine-tuned)</td><td>0.9029</td></tr>
+<tr ><td>Optimized CNN</td><td>0.8772</td></tr>
+<tr ><td>ResNet50 (Fine-tuned)</td><td>0.6797</td></tr>
+<tr ><td>ResNet50</td><td>0.5167</td></tr>
+<tr ><td>VGG16</td><td>0.5022</td></tr>
+<tr ><td>EfficientNetB3 (Fine-tuned)</td><td>0.2455</td></tr>
+<tr ><td>EfficientNetB3</td><td>0.2422</td></tr>
+
+        </table>
+
+        <h2>Visualizations</h2>
+        <h3>Dataset Distribution</h3>
+        <img src="visualizations/dataset_distribution.png" alt="Dataset Distribution">
+
+        <h3>Model Comparison</h3>
+        <img src="visualizations/model_comparison.png" alt="Model Comparison">
+
+        <p>Report generated on 2025-03-19 01:58:37</p>
+    </body>
+    </html>
+    
